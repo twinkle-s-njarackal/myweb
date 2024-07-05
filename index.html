@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Twinkle S Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('./images/ing4.jpeg');
+  min-height: 100%;
+  position: relative; 
+}
+.bgimg-1::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("./images/img3.jpeg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("./images/img3.jpeg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" style="color: white;" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" id="home-link" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" id="about-link" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <!-- <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a> -->
+    <a href="#contact" id="contact-link" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+   
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <!-- <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a> -->
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container " id="home">
+  <div class="w3-display-middle" style="white-space:nowrap; text-align: center;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" >TWINKLE S</span><br>
+    <!-- <span class="w3-center w3-padding-large" style="font-family: emoji; 
+    color: aliceblue; font-size:x-large;">Business Presentation Specialist</span> -->
+    <h3 style="color: rgb(255, 255, 255);">Business Presentation Specialist</h3>
+    <a href="https://www.linkedin.com/in/twinkle-s-425808220/" target="_blank"><i style="color: white; font-size: 34px;" class="fa fa-linkedin-square w3-hover-opacity"></i></a>
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>That Presentation Specialist you are looking for :)</em></p>
+  <p>As a Business Presentation Specialist I use my creativity and attention to detail to create clear and accurate visual presentations in PowerPoint, translating ideas into eye-catching slides and visual stories that create impact. In addition to creating new slides, I edit, rework, and enhance existing materials, and proofread all documents to ensure they meet the firm's quality standards. In addition I partner with the firm's consultants to understand their needs and offer solutions, getting support from my team and brainstorming ideas together.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+     <p><b><i class="fa fa-user w3-margin-right"></i>Twinkle S</b></p><br>
+      <img src="./images/img3.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome. The writings below are not from today or yesterday. It all started from my school days. No no! you are not going to read my auto-biography. We all hate history though!</p>
+      I have always been interested in coming up with ideas for greenboard decoration and classroom organisation for inspection. During my college days, I loved creating postures and brochures for college events. However, as fortunate (like our ancestors say) I landed up working as a <b>Business Presentation Specialist</b>. I at this moment thank the <b>McKinsey and Company</b> for trusting me and giving me my first job on <i>21st of November 2022</i> (as if I'm giving a speech at an award night after being an awardee). Anyway if you are not interested to read the information above, I have provided you the same in short. I value your time!
+   
+      <h3>Work Experience</h3>
+      <h5>McKinsey and Company</h5>
+      <p>Business Presentation Specialist <i>(Nov 2022 - present)</i></p>
+      <p>
+      <a style="text-decoration: none;" href="mailto:twinkleshaiju06@gmail.com">mail: twinkleshaiju06@gmail.com<br></a>
+      Phone: +91 9344290153<br>
+      </p>
+   
+
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">My Skills</p>
+  <p class="w3-wide"><i class="	fa fa-file-powerpoint-o"></i>MS PowerPoint</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:96%">96%</div>
+  </div>
+
+  <p class="w3-wide"><i class="fa fa-file-excel-o"></i>MS Excel, MS Word</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:96%">96%</div>
+  </div>
+
+  <p class="w3-wide"><i class="fa fa-pencil-square-o"></i>Content Writing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:96%">96%</div>
+  </div>
+
+  <p class="w3-wide"><i class="fa fa-envelope-o"></i>Business Communication</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
+  </div>
+
+  
+
+  <p class="w3-wide"><i class="fa fa-globe"></i>Web Designing (html, CSS, JavaScript)</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+
+  
+
+  <p><button id="downloadButton" class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+
+</div>
+
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <!-- <p class="w3-center"><em>I'd love your feedback!</em></p> -->
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="./images/office.webp" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+       <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Brigade World Trade Center Tower B, Perungudi, Chennai, India<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 9344290153<br>
+        <a style="text-decoration: none;" href="mailto:twinkleshaiju06@gmail.com"><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: twinkleshaiju06@gmail.com<br></a>
+        <a style="margin-left: 6px; text-decoration: none;" href="https://www.linkedin.com/in/twinkle-s-425808220/" target="_blank"><i class="fa fa-linkedin  w3-hover-text-black w3-xlarge w3-margin-right"></i> https://www.linkedin.com/in/twinkle-s-425808220/</a>
+    
+      </div>
+     
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" id="intop-link" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/in/twinkle-s-425808220/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+//downlod resume
+const button = document.getElementById("downloadButton");
+  button.addEventListener("click", function() {
+    // Simulate click on a hidden anchor element with the download link
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "./images/Twinkle s.pdf"; 
+    downloadLink.download = "Twinkle_Resume.pdf";
+    downloadLink.click();
+  });
+
+  //smoot
+  document.getElementById("home-link").addEventListener("click", function(e) {
+      e.preventDefault();
+      const aboutSection = document.getElementById("home");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+  document.getElementById("about-link").addEventListener("click", function(e) {
+      e.preventDefault();
+      const aboutSection = document.getElementById("about");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+    document.getElementById("contact-link").addEventListener("click", function(e) {
+      e.preventDefault();
+      const aboutSection = document.getElementById("contact");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("intop-link").addEventListener("click", function(e) {
+      e.preventDefault();
+      const aboutSection = document.getElementById("home");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+</script>
+
+</body>
+</html>
